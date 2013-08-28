@@ -1,0 +1,10 @@
+*.model1v3
+**/buid/
+*.pbxuser
+.DS_Store
+docs/
+*.xcworkspace/
+xcuserdata*/
+*.orig
+.idea/
+Pods/
