@@ -40,14 +40,14 @@
 /* Begin PBXFileReference section */
 		064E247617CE66D000B426AD /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
 		064E247717CE66D000B426AD /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
-		06F29F5417CE32FA00B7ED79 /* AtualidadesWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtualidadesWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F29F5417CE32FA00B7ED79 /* AtualidadesWeb-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AtualidadesWeb-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F29F5717CE32FA00B7ED79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06F29F5917CE32FA00B7ED79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06F29F5B17CE32FA00B7ED79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		06F29F5F17CE32FA00B7ED79 /* AtualidadesWeb-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtualidadesWeb-Info.plist"; sourceTree = "<group>"; };
+		06F29F5F17CE32FA00B7ED79 /* AtualidadesWeb-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtualidadesWeb-iOS-Info.plist"; sourceTree = "<group>"; };
 		06F29F6117CE32FA00B7ED79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06F29F6317CE32FA00B7ED79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		06F29F6517CE32FA00B7ED79 /* AtualidadesWeb-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtualidadesWeb-Prefix.pch"; sourceTree = "<group>"; };
+		06F29F6517CE32FA00B7ED79 /* AtualidadesWeb-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtualidadesWeb-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		06F29F6617CE32FA00B7ED79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		06F29F6717CE32FA00B7ED79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		06F29F6917CE32FA00B7ED79 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -56,14 +56,14 @@
 		06F29F7017CE32FA00B7ED79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		06F29F7217CE32FA00B7ED79 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		06F29F7317CE32FA00B7ED79 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		06F29F7A17CE32FA00B7ED79 /* AtualidadesWebTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtualidadesWebTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F29F7A17CE32FA00B7ED79 /* AtualidadesWeb-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AtualidadesWeb-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F29F7B17CE32FA00B7ED79 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		06F29F8317CE32FA00B7ED79 /* AtualidadesWebTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtualidadesWebTests-Info.plist"; sourceTree = "<group>"; };
+		06F29F8317CE32FA00B7ED79 /* AtualidadesWeb-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtualidadesWeb-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		06F29F8517CE32FA00B7ED79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06F29F8717CE32FA00B7ED79 /* AtualidadesWebTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AtualidadesWebTests.h; sourceTree = "<group>"; };
 		06F29F8817CE32FA00B7ED79 /* AtualidadesWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtualidadesWebTests.m; sourceTree = "<group>"; };
 		41805A4F7357441BB603CED5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C5F8E4CE7B94A72A3613845 /* Pods/Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		6C5F8E4CE7B94A72A3613845 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,15 +98,15 @@
 				06F29F8117CE32FA00B7ED79 /* AtualidadesWebTests */,
 				06F29F5617CE32FA00B7ED79 /* Frameworks */,
 				06F29F5517CE32FA00B7ED79 /* Products */,
-				6C5F8E4CE7B94A72A3613845 /* Pods/Pods.xcconfig */,
+				6C5F8E4CE7B94A72A3613845 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		06F29F5517CE32FA00B7ED79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06F29F5417CE32FA00B7ED79 /* AtualidadesWeb.app */,
-				06F29F7A17CE32FA00B7ED79 /* AtualidadesWebTests.octest */,
+				06F29F5417CE32FA00B7ED79 /* AtualidadesWeb-iOS.app */,
+				06F29F7A17CE32FA00B7ED79 /* AtualidadesWeb-iOSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,10 +141,10 @@
 		06F29F5E17CE32FA00B7ED79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				06F29F5F17CE32FA00B7ED79 /* AtualidadesWeb-Info.plist */,
+				06F29F5F17CE32FA00B7ED79 /* AtualidadesWeb-iOS-Info.plist */,
 				06F29F6017CE32FA00B7ED79 /* InfoPlist.strings */,
 				06F29F6317CE32FA00B7ED79 /* main.m */,
-				06F29F6517CE32FA00B7ED79 /* AtualidadesWeb-Prefix.pch */,
+				06F29F6517CE32FA00B7ED79 /* AtualidadesWeb-iOS-Prefix.pch */,
 				06F29F6917CE32FA00B7ED79 /* Default.png */,
 				06F29F6B17CE32FA00B7ED79 /* Default@2x.png */,
 				06F29F6D17CE32FA00B7ED79 /* Default-568h@2x.png */,
@@ -165,7 +165,7 @@
 		06F29F8217CE32FA00B7ED79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				06F29F8317CE32FA00B7ED79 /* AtualidadesWebTests-Info.plist */,
+				06F29F8317CE32FA00B7ED79 /* AtualidadesWeb-iOSTests-Info.plist */,
 				06F29F8417CE32FA00B7ED79 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		06F29F5317CE32FA00B7ED79 /* AtualidadesWeb */ = {
+		06F29F5317CE32FA00B7ED79 /* AtualidadesWeb-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06F29F8C17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWeb" */;
+			buildConfigurationList = 06F29F8C17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWeb-iOS" */;
 			buildPhases = (
 				F40E5CEA2FAA4EB3A9681447 /* Check Pods Manifest.lock */,
 				06F29F5017CE32FA00B7ED79 /* Sources */,
@@ -188,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = AtualidadesWeb;
+			name = "AtualidadesWeb-iOS";
 			productName = AtualidadesWeb;
-			productReference = 06F29F5417CE32FA00B7ED79 /* AtualidadesWeb.app */;
+			productReference = 06F29F5417CE32FA00B7ED79 /* AtualidadesWeb-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		06F29F7917CE32FA00B7ED79 /* AtualidadesWebTests */ = {
+		06F29F7917CE32FA00B7ED79 /* AtualidadesWeb-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06F29F8F17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWebTests" */;
+			buildConfigurationList = 06F29F8F17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWeb-iOSTests" */;
 			buildPhases = (
 				06F29F7517CE32FA00B7ED79 /* Sources */,
 				06F29F7617CE32FA00B7ED79 /* Frameworks */,
@@ -207,9 +207,9 @@
 			dependencies = (
 				06F29F8017CE32FA00B7ED79 /* PBXTargetDependency */,
 			);
-			name = AtualidadesWebTests;
+			name = "AtualidadesWeb-iOSTests";
 			productName = AtualidadesWebTests;
-			productReference = 06F29F7A17CE32FA00B7ED79 /* AtualidadesWebTests.octest */;
+			productReference = 06F29F7A17CE32FA00B7ED79 /* AtualidadesWeb-iOSTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = atualidadesweb;
 			};
-			buildConfigurationList = 06F29F4F17CE32FA00B7ED79 /* Build configuration list for PBXProject "AtualidadesWeb" */;
+			buildConfigurationList = 06F29F4F17CE32FA00B7ED79 /* Build configuration list for PBXProject "AtualidadesWeb-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -233,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06F29F5317CE32FA00B7ED79 /* AtualidadesWeb */,
-				06F29F7917CE32FA00B7ED79 /* AtualidadesWebTests */,
+				06F29F5317CE32FA00B7ED79 /* AtualidadesWeb-iOS */,
+				06F29F7917CE32FA00B7ED79 /* AtualidadesWeb-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,7 +333,7 @@
 /* Begin PBXTargetDependency section */
 		06F29F8017CE32FA00B7ED79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 06F29F5317CE32FA00B7ED79 /* AtualidadesWeb */;
+			target = 06F29F5317CE32FA00B7ED79 /* AtualidadesWeb-iOS */;
 			targetProxy = 06F29F7F17CE32FA00B7ED79 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -424,24 +424,24 @@
 		};
 		06F29F8D17CE32FA00B7ED79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C5F8E4CE7B94A72A3613845 /* Pods/Pods.xcconfig */;
+			baseConfigurationReference = 6C5F8E4CE7B94A72A3613845 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AtualidadesWeb/AtualidadesWeb-Prefix.pch";
-				INFOPLIST_FILE = "AtualidadesWeb/AtualidadesWeb-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AtualidadesWeb/AtualidadesWeb-iOS-Prefix.pch";
+				INFOPLIST_FILE = "AtualidadesWeb/AtualidadesWeb-iOS-Info.plist";
+				PRODUCT_NAME = "AtualidadesWeb-iOS";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		06F29F8E17CE32FA00B7ED79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C5F8E4CE7B94A72A3613845 /* Pods/Pods.xcconfig */;
+			baseConfigurationReference = 6C5F8E4CE7B94A72A3613845 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AtualidadesWeb/AtualidadesWeb-Prefix.pch";
-				INFOPLIST_FILE = "AtualidadesWeb/AtualidadesWeb-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AtualidadesWeb/AtualidadesWeb-iOS-Prefix.pch";
+				INFOPLIST_FILE = "AtualidadesWeb/AtualidadesWeb-iOS-Info.plist";
+				PRODUCT_NAME = "AtualidadesWeb-iOS";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -456,8 +456,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtualidadesWeb/AtualidadesWeb-Prefix.pch";
-				INFOPLIST_FILE = "AtualidadesWebTests/AtualidadesWebTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AtualidadesWebTests/AtualidadesWeb-iOSTests-Info.plist";
+				PRODUCT_NAME = "AtualidadesWeb-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -473,8 +473,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AtualidadesWeb/AtualidadesWeb-Prefix.pch";
-				INFOPLIST_FILE = "AtualidadesWebTests/AtualidadesWebTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "AtualidadesWebTests/AtualidadesWeb-iOSTests-Info.plist";
+				PRODUCT_NAME = "AtualidadesWeb-iOSTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -483,7 +483,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06F29F4F17CE32FA00B7ED79 /* Build configuration list for PBXProject "AtualidadesWeb" */ = {
+		06F29F4F17CE32FA00B7ED79 /* Build configuration list for PBXProject "AtualidadesWeb-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F29F8A17CE32FA00B7ED79 /* Debug */,
@@ -492,7 +492,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06F29F8C17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWeb" */ = {
+		06F29F8C17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWeb-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F29F8D17CE32FA00B7ED79 /* Debug */,
@@ -501,7 +501,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06F29F8F17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWebTests" */ = {
+		06F29F8F17CE32FA00B7ED79 /* Build configuration list for PBXNativeTarget "AtualidadesWeb-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06F29F9017CE32FA00B7ED79 /* Debug */,
