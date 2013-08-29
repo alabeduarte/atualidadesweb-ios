@@ -10,6 +10,7 @@
 #import "News.h"
 #import "ViewController.h"
 #import <RestKit/RestKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ViewController ()
 
@@ -20,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.tableView setHidden: YES];
     
     RKObjectMapping *newsMapping = [RKObjectMapping mappingForClass:[News class]];
     [newsMapping addAttributeMappingsFromDictionary:@{
@@ -32,41 +33,51 @@
     
     RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:newsMapping method:RKRequestMethodAny pathPattern:nil keyPath:nil statusCodes:nil];
     
-    NSURL *url = [NSURL URLWithString:@"http://localhost:3000/timeline.json"];
+    NSURL *url = [NSURL URLWithString:@"http://atualidadesweb.com.br/timeline.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[responseDescriptor]];
     
     [operation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *result) {
         self.news = [result array];
+        
+        [self.tableView setHidden: NO];
         [self.tableView reloadData];
+        
+        self.headerItem.title = @"Atualidades | Web";
     } failure:nil];
     
     [operation start];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView
- numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.news.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView
-         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"News"];
+    NSString *NewsIdentifier = @"News";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: NewsIdentifier];
     
     if(cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"News"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier: NewsIdentifier];
+    } else {
     }
     
-    cell.textLabel.text = self.news[indexPath.row][@"title"];    
+    News *aNews = [self.news objectAtIndex: indexPath.row];
+    cell.textLabel.text = aNews.title;
+    cell.detailTextLabel.text = aNews.subtitle;
+
+    NSURL *image = [NSURL URLWithString: aNews.image];
+    [cell.imageView setImageWithURL: image];
+    
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // select row at index
+    // Select row at index
 }
 
 - (void)didReceiveMemoryWarning

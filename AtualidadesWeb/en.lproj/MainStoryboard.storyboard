@@ -15,16 +15,32 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="8Fh-vH-7it">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2" id="PaM-9S-Xj3"/>
+                                    <outlet property="delegate" destination="2" id="9N3-Is-Ikd"/>
+                                </connections>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wn6-Od-oNr">
+                                <items>
+                                    <navigationItem title="Title" id="WAo-sn-3dW"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8Fh-vH-7it" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="7cT-m4-BJf"/>
                             <constraint firstItem="8Fh-vH-7it" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="ByZ-6V-t0G"/>
                             <constraint firstItem="8Fh-vH-7it" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Hj5-sH-dIg"/>
                             <constraint firstItem="8Fh-vH-7it" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="KOT-bR-pf6"/>
+                            <constraint firstItem="Wn6-Od-oNr" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="PUa-15-Glg"/>
+                            <constraint firstItem="8Fh-vH-7it" firstAttribute="top" secondItem="Wn6-Od-oNr" secondAttribute="bottom" type="default" id="Wo2-Me-PDu"/>
+                            <constraint firstItem="Wn6-Od-oNr" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="qHN-bM-9IY"/>
+                            <constraint firstItem="Wn6-Od-oNr" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="wFZ-t3-HxH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerItem" destination="WAo-sn-3dW" id="J3j-eY-s3T"/>
+                        <outlet property="tableView" destination="8Fh-vH-7it" id="mqb-rg-1dH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,8 +50,12 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="ViewController" superclassName="UITableViewController">
+        <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerItem" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

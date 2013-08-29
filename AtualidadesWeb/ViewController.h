@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
+@interface ViewController : UIViewController<UITableViewDelegate>
+
 @property (strong, nonatomic) NSArray *news;
+@property (strong, nonatomic) IBOutlet UINavigationItem *headerItem;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
+
 @end
