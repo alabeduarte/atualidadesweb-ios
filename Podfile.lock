@@ -1,5 +1,10 @@
 PODS:
   - AFNetworking (1.3.2)
+  - Kiwi (2.2.1):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - Kiwi/ARC (2.2.1)
+  - Kiwi/NonARC (2.2.1)
   - libwebp (0.3.0-rc7):
     - libwebp/dec
     - libwebp/dsp
@@ -33,11 +38,13 @@ PODS:
   - TransitionKit (1.1.1)
 
 DEPENDENCIES:
+  - Kiwi
   - RestKit (~> 0.20.3)
   - SDWebImage (~> 3.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 7f9bcd7c287a75476cd5c61e82fd3380e93e4c54
+  Kiwi: e6524ba0eaa1b28af7af146bdee5314b32aa3edb
   libwebp: 40517fa1fd3716eded73b4696c45fc0b66e4b414
   RestKit: 1f181c180105a92f11ec4f6cd7de37625e516d83
   SDWebImage: f13f791e411c632489824aa7f129e230b52bf5c4
