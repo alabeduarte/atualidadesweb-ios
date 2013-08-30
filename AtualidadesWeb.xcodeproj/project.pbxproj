@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		064E247817CE66D000B426AD /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 064E247717CE66D000B426AD /* News.m */; };
 		06708A8717CFF67300B33148 /* FetchNewsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 06708A8617CFF67300B33148 /* FetchNewsSpec.m */; };
+		06708A8A17D0CDA900B33148 /* NewsUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 06708A8917D0CDA900B33148 /* NewsUpdater.m */; };
 		06F29F5817CE32FA00B7ED79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F29F5717CE32FA00B7ED79 /* UIKit.framework */; };
 		06F29F5A17CE32FA00B7ED79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F29F5917CE32FA00B7ED79 /* Foundation.framework */; };
 		06F29F5C17CE32FA00B7ED79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F29F5B17CE32FA00B7ED79 /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 		064E247717CE66D000B426AD /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		06708A8517CFF67300B33148 /* FetchNewsSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchNewsSpec.h; sourceTree = "<group>"; };
 		06708A8617CFF67300B33148 /* FetchNewsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchNewsSpec.m; sourceTree = "<group>"; };
+		06708A8817D0CDA900B33148 /* NewsUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsUpdater.h; sourceTree = "<group>"; };
+		06708A8917D0CDA900B33148 /* NewsUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsUpdater.m; sourceTree = "<group>"; };
 		06F29F5417CE32FA00B7ED79 /* AtualidadesWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtualidadesWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F29F5717CE32FA00B7ED79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06F29F5917CE32FA00B7ED79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 		06F29F5D17CE32FA00B7ED79 /* AtualidadesWeb */ = {
 			isa = PBXGroup;
 			children = (
+				06708A8817D0CDA900B33148 /* NewsUpdater.h */,
+				06708A8917D0CDA900B33148 /* NewsUpdater.m */,
 				06F29F6617CE32FA00B7ED79 /* AppDelegate.h */,
 				06F29F6717CE32FA00B7ED79 /* AppDelegate.m */,
 				06F29F6F17CE32FA00B7ED79 /* MainStoryboard.storyboard */,
@@ -355,6 +360,7 @@
 				06F29F6817CE32FA00B7ED79 /* AppDelegate.m in Sources */,
 				06F29F7417CE32FA00B7ED79 /* ViewController.m in Sources */,
 				064E247817CE66D000B426AD /* News.m in Sources */,
+				06708A8A17D0CDA900B33148 /* NewsUpdater.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

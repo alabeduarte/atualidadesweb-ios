@@ -1,12 +1,15 @@
 #import "Kiwi.h"
+#import "ViewController.h"
 
-SPEC_BEGIN(MathSpec)
+SPEC_BEGIN(FetchNewsSpec)
 
-describe(@"Math", ^{
-    it(@"is pretty cool", ^{
-        NSUInteger a = 16;
-        NSUInteger b = 26;
-        [[theValue(a + b) should] equal:theValue(42)];
+describe(@"when view did load", ^{
+    ViewController *viewController = [[ViewController alloc] init];
+    [viewController viewDidLoad];
+    
+    it(@"should load all news", ^{
+        int newsCount = [viewController.news count];
+        [[theValue(newsCount) should] equal:theValue(130)];
     });
 });
 

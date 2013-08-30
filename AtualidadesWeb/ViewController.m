@@ -8,8 +8,7 @@
 
 #import "ViewController.h"
 #import "News.h"
-#import "ViewController.h"
-#import <RestKit/RestKit.h>
+#import "NewsUpdater.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ViewController ()
@@ -23,31 +22,15 @@
     [super viewDidLoad];
     [self.tableView setHidden: YES];
     
-    RKObjectMapping *newsMapping = [RKObjectMapping mappingForClass:[News class]];
-    [newsMapping addAttributeMappingsFromDictionary:@{
-     @"id" : @"id",
-     @"title" : @"title",
-     @"subtitle" : @"subtitle",
-     @"image" : @"image"
-     }];
-    
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:newsMapping method:RKRequestMethodAny pathPattern:nil keyPath:nil statusCodes:nil];
-    
-    NSURL *url = [NSURL URLWithString:@"http://atualidadesweb.com.br/timeline.json"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    RKObjectRequestOperation *operation = [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[responseDescriptor]];
-    
-    [operation setCompletionBlockWithSuccess:^(RKObjectRequestOperation *operation, RKMappingResult *result) {
-        self.news = [result array];
+    NewsUpdater *updater = [[NewsUpdater alloc] init];
+    [updater updateNews: ^(NSArray *result) {
+        self.news = result;
         
         [self.tableView setHidden: NO];
         [self.tableView reloadData];
         
         self.headerItem.title = @"Atualidades | Web";
-    } failure:nil];
-    
-    [operation start];
+    }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
